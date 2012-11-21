@@ -17,7 +17,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    // Call the Append function with two NSStrings. Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
+    
+    // Call the Add function passing in two integer values. Capture the return of this function into a variable.
+    // Bundle the returned integer into an NSNumber and then convert it to a NSString and pass it to the DisplayAlertWithString function.
+    // Give it some text for the title. The message will read, "The number is 00". Replace the 00 with the integer passed into the function.
+    // Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
 }
 
 - (void)didReceiveMemoryWarning

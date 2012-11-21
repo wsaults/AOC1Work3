@@ -13,17 +13,28 @@
 }
 
 /**
- This method will take two NSInteger or int types and return the result of an addition between these two.
- @param Take 2 integer values which will be added together.
- @return the result of the addtion.
+ @param take 2 integer values which will be added together.
+ @return the sum of the 2 numbers.
  **/
 -(int)additionValueX:(NSInteger *)x andY:(NSInteger *)y;
 
 /**
- This method takes two NSInteger values.
- @param Take 2 integer values which will be compared.
- @return YES or NO based on whether the values are equal
+ @param take 2 integer values which will be compared.
+ @return YES or NO based on whether the values are equal.
  **/
 -(BOOL)compareValueX:(NSInteger *)x andY:(NSInteger *)y;
+
+
+/**
+ @praram this method will take two NSStrings.
+ @return a new NSString containing the appended strings using an NSMutableString.
+ **/
+-(NSString *)appendString1:(NSString *)string1 andString2:(NSString *)string2;
+
+/**
+ Take the passed in NSString and display it in an alert view.
+ @param this function will take as a parameter an NSString.
+ **/
+-(void)displayAlertWithString:(NSString *)string;
 
 @end
