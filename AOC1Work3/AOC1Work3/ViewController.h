@@ -14,13 +14,13 @@
  @param take 2 integer values which will be added together.
  @return the sum of the 2 numbers.
  **/
--(int)additionValueX:(NSInteger *)x andY:(NSInteger *)y;
+-(int)additionValueX:(NSInteger)x andY:(NSInteger)y;
 
 /**
  @param take 2 integer values which will be compared.
  @return YES or NO based on whether the values are equal.
  **/
--(BOOL)compareValueX:(NSInteger *)x andY:(NSInteger *)y;
+-(BOOL)compareValueX:(NSInteger)x andY:(NSInteger)y;
 
 
 /**
