@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController {
-    
-}
+@interface ViewController : UIViewController
 
 /**
  @param take 2 integer values which will be added together.
