@@ -18,7 +18,8 @@
 {
     [super viewDidLoad];
     
-    // Call the Append function with two NSStrings. Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
+    // Call the Append function with two NSStrings.
+    // Capture the result and display a UIAlertView with the appended string using displayAlertWithString.
     [self displayAlertWithString:[self appendString1:@"Hello, " andString2:@"World!"]];
     
     // Call the Add function passing in two integer values. Capture the return of this function into a variable.
