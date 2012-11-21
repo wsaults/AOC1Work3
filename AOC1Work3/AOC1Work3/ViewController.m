@@ -29,10 +29,12 @@
     [self displayAlertWithString:[NSString stringWithFormat:@"The number is %@",[[[NSNumber alloc] initWithInt:sum] stringValue]]];
     
     // Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
-    int firstValue = 111;
-    int secondValue = 111;
-    if ([self compareValueX:firstValue andY:secondValue]) {
-        [self displayAlertWithString:[NSString stringWithFormat:@"%i + %i = %i", firstValue, secondValue, [self additionValueX:firstValue andY:secondValue]]];
+    int firstValueToCompare = 111;
+    int secondValueToCompare = 111;
+    if ([self compareValueX:firstValueToCompare andY:secondValueToCompare]) {
+        [self displayAlertWithString:[NSString stringWithFormat:@"%i + %i = %i", firstValueToCompare, secondValueToCompare,
+                                      [self additionValueX:firstValueToCompare
+                                                      andY:secondValueToCompare]]];
     }
 }
 
