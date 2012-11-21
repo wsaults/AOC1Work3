@@ -25,10 +25,15 @@
     int sum = [self additionValueX:1 andY:2];
     
     // Bundle the returned integer into an NSNumber and then convert it to a NSString and pass it to the DisplayAlertWithString function.
-    [self displayAlertWithString:[NSString stringWithString:[[[NSNumber alloc] initWithInt:sum] stringValue]]];
-    
     // Give it some text for the title. The message will read, "The number is 00". Replace the 00 with the integer passed into the function.
+    [self displayAlertWithString:[NSString stringWithFormat:@"The number is %@",[[[NSNumber alloc] initWithInt:sum] stringValue]]];
+    
     // Call the Compare function with two integer values. If Compare returns YES, display an UIAlertView both with the input values and the result using the DisplayAlertWithString function
+    int firstValue = 111;
+    int secondValue = 111;
+    if ([self compareValueX:firstValue andY:secondValue]) {
+        [self displayAlertWithString:[NSString stringWithFormat:@"%i + %i = %i", firstValue, secondValue, [self additionValueX:firstValue andY:secondValue]]];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -48,7 +53,6 @@
     } else {
         return NO;
     }
-
 }
 
 -(NSString *)appendString1:(NSString *)string1 andString2:(NSString *)string2 {
